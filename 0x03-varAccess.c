@@ -2,7 +2,7 @@
 
 
 int main() {
-    const int i = 10;
+    const int i = 20;
     // i = 10;  // error: assignment of read-only variable ‘i’
     int *ptr = (int *)(&i);  // pointer to i
     printf("([BEFORE CHANGING]*ptr = &i) : %d\n(address of ptr: [%p]),\n  (address of i: [%p])\n", *ptr, ptr, &i);  // 10
